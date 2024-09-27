@@ -1,86 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Defines the document type and language. -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alex's website</title>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling and rendering on different devices. -->
+    <title>alex's website</title> <!-- The title that appears on the browser tab. -->
     <style>
-        /* Basic styles */
+        /* Basic styles for the entire document */
         body {
-            margin: 0;
-            font-family: 'Consolas';
-            background-color: #FFECA3;
-            color: #A64C3E;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
+            margin: 0; /* Removes default margin around the body. */
+            font-family: 'Consolas', monospace; /* Sets the font to Consolas, with monospace as a fallback. */
+            background-color: #FFECA3; /* Sets a light pastel yellow background color for the page. */
+            color: #457291; /* Sets the text color. */
+            display: flex; /* Enables flexbox layout for the body. */
+            flex-direction: column; /* Arranges elements vertically. */
+            align-items: center; /* Centers child elements horizontally. */
+            justify-content: center; /* Centers child elements vertically. */
+            height: 100vh; /* Sets the height of the body to 100% of the viewport height. */
+            text-align: left; /* Centers text within the body element. */
         }
 
         header {
-            background-color: #FFECA3;
-            padding: 1rem;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+            background-color: #FFECA3; /* Sets the same light pastel yellow background color for the header. */
+            padding: 1rem; /* Adds padding inside the header for spacing. */
+            width: 100%; /* Makes the header span the full width of the viewport. */
+            position: fixed; /* Fixes the header at the top of the page, even when scrolling. */
+            top: 0; /* Positions the header at the top of the viewport. */
+            display: flex; /* Enables flexbox layout for the header. */
+            justify-content: left; /* Centers the content horizontally within the header. */
         }
 
         h1 {
-            color: #457291;
-            margin: 0;
-            font-size: 2rem;
+            color: #457291; /* Sets the header text color to pastel blue. */
+            margin: 0; /* Removes default margin around the h1 element. */
+            font-size: 2rem; /* Sets the font size of the h1 element to 2 rem units. */
         }
 
         nav {
-            margin-top: 1rem;
+            margin-top: 1rem; /* Adds a margin above the navigation to separate it from the header. */
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 1rem;
+            list-style-type: none; /* Removes default bullet points from the list. */
+            padding: 0; /* Removes default padding from the list. */
+            margin: 0; /* Removes default margin from the list. */
+            display: flex; /* Enables flexbox layout for the list. */
+            gap: 1rem; /* Adds a 1rem space between list items. */
         }
 
         nav ul li {
-            display: inline;
+            display: inline; /* Ensures list items are displayed inline. */
         }
 
         nav ul li a {
-            text-decoration: none;
-            color: #457291;
-            font-size: 1.1rem;
-            /* font-weight: bold; */
+            text-decoration: none; /* Removes default underline from links. */
+            color: #A64C3E; /* Sets the link color to pastel blue. */
+            font-size: 1.1rem; /* Sets the font size of links slightly larger than normal text. */
+            font-weight: bold; /* Makes the link text bold. */
         }
 
         main {
-            margin-top: 5rem; /* Adjust to give space for the fixed header */
-            padding: 2rem;
-            max-width: 600px;
-            line-height: 1.6;
+            margin-top: 5rem; /* Adds a top margin to push the main content down, creating space for the fixed header. */
+            padding: 2rem; /* Adds padding inside the main element for spacing. */
+            max-width: 600px; /* Limits the width of the main content to 600px for better readability. */
+            line-height: 1.6; /* Increases line height for better readability of the text. */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>alex</h1>
+        <h1>Alex</h1> <!-- The main heading of the site, displaying the name 'Alex'. -->
     </header>
     <nav>
         <ul>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#now">now</a></li>
-            <li><a href="#digital-garden">digital garden 🌻</a></li>
-            <li><a href="#tenets">tenets </a></li>
+            <!-- Navigation links to different sections of the website. -->
+            <li><a href="#blog">blog</a></li> <!-- Link to the 'Blog' section. -->
+            <li><a href="#about">about</a></li> <!-- Link to the 'About' section. -->
+            <li><a href="#now">now</a></li> <!-- Link to the 'Now' section. -->
+            <li><a href="#digital-garden">digital garden 🌻</a></li> <!-- Link to the 'Digital Garden' section. -->
+            <li><a href="#tenets">Tenets</a></li> <!-- Link to the 'Tenets' section. -->
         </ul>
     </nav>
     <main>
+        <!-- Main content of the page, introducing Alex and describing the purpose of the website. -->
         <p>Hello! I am Alex and this is my personal website. I use it to organize my ideas and inspirations.</p>
     </main>
 </body>
