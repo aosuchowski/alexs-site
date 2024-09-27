@@ -3,34 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My New Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Alex's Personal Website</title>
+    <style>
+        /* Basic styles */
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #FFF9DB; /* Light pastel yellow */
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #FFF9DB;
+            padding: 1rem;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #A7C7E7; /* Pastel blue */
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #A7C7E7; /* Pastel blue */
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        main {
+            margin-top: 5rem; /* Adjust to give space for the fixed header */
+            padding: 2rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My New Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Alex</h1>
     </header>
-    <section id="about">
-        <h2>About</h2>
-        <p>Details about this project.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Information about my work.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Contact information or form.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 My New Site</p>
-    </footer>
+    <nav>
+        <ul>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#now">Now</a></li>
+            <li><a href="#digital-garden">Digital Garden</a></li>
+            <li><a href="#tenets">Tenets</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Hello! I am Alex and this is my personal website. I use it to organize my ideas and inspirations.</p>
+    </main>
 </body>
 </html>
