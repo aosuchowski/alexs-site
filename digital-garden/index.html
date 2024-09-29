@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about - alex's website</title>
+    <title>Alex Osuchowski</title>
     <style>
         body {
             margin: 0;
@@ -56,6 +56,11 @@
             color: #A64C3E;
             font-size: 1.1rem;
             font-weight: normal;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
         main {
@@ -64,19 +69,46 @@
             max-width: 600px;
             line-height: 1.6;
         }
+
+        .box-link {
+            font-size: 1.2em;
+            background-color: #FFD700;
+            color: #457291;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            border-radius: 5px;
+            /* text-transform: uppercase; */
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .box-link:hover {
+            background-color: #FFC700;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>alex osuchowski</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">homepage</a></li>
         </ul>
     </nav>
+
     <main>
-        <p>I am trained as a civil engineer, specifically a geotechnical engineer, and more specifically as an offshore geotechnical engineer. I recently completed my PhD at The University of Western Australia in Perth. Before that I lived in the United States where I was born and raised.</p>
+        <p>I love gardening. And I like computers too. So naturally, I had to make my own digital garden 🌻. Right now it is a work in (coding) progress. Once the ground has been dug, and compost mixed in the topsoil, I intend to use it as a place to collect anything I come across that I wish to save – pictures, ideas, book recommendations, recipes, etc. It is likely to only make sense to me, but you can have a look around if you'd like, it's a garden after all.</p>
+        <p>Ultimately, I'd like to create something similar to what Tom Critchlow has made <a href="https://tomcritchlow.com/wiki/" style="text-decoration: underline;">here</a>.</p>
+
+        <!-- Clickable links for Notes and Assets -->
+        <a href="art/index.html" class="box-link">art</a>
+        <a href="people/index.html" class="box-link">people</a>
     </main>
 </body>
 </html>
+
+
