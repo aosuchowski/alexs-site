@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Osuchowski</title>
     <style>
+        /* Basic styles for the entire document */
         body {
             margin: 0;
             font-family: 'Consolas', monospace;
@@ -13,21 +14,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-top: 2rem;
             text-align: left;
-        }
-
-        header {
-            background-color: #FFECA3;
-            padding: 1rem;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
         }
 
         h1 {
@@ -35,95 +25,51 @@
             margin: 0;
             font-size: 2rem;
             font-weight: normal;
-            position: absolute; /* This will allow centering while other items are positioned relative */
-            left: 50%;
-            transform: translateX(-50%);
         }
 
-        /* Menu icon with two horizontal dashes */
-        .menu-icon {
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: #457291;
-            background: none;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.2rem;
-            position: absolute; /* Position menu icon on the right */
-            right: 1rem;
+        nav {
+            margin-top: 1.5rem;
         }
 
-        .menu-icon div {
-            width: 30px;
-            height: 2px;
-            background-color: #457291;
-        }
-
-        /* Dropdown menu styling */
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 10px;
-            background-color: #FFECA3;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
-            padding: 1rem;
-        }
-
-        .dropdown ul {
+        nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
-        .dropdown ul li {
-            margin: 0.5rem 0;
+        nav ul li {
+            display: block;
         }
 
-        .dropdown ul li a {
+        nav ul li a {
             text-decoration: none;
             color: #A64C3E;
             font-size: 1.1rem;
-            display: block;
-        }
-
-        .dropdown ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Show dropdown when active */
-        .dropdown.active {
-            display: block;
+            font-weight: normal;
         }
 
         main {
-            margin-top: 5rem;
-            padding: 2rem;
+            margin-top: 1rem;
+            /* padding: 0.5rem; */
             max-width: 600px;
             line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>alex osuchowski</h1>
-        <button class="menu-icon" onclick="toggleDropdown()">
-            <div></div>
-            <div></div>
-        </button>
-        <div class="dropdown" id="dropdownMenu">
-            <ul>
-                <li><a href="about.html">about</a></li>
-                <li><a href="now.html">now</a></li>
-                <li><a href="blogs.html">blogs</a></li>
-                <li><a href="tenets.html">tenets</a></li>
-                <li><a href="digital-garden/index.html">digital garden 🌻</a></li>
-            </ul>
-        </div>
-    </header>
-
+    <h1>alex osuchowski</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="now.html">now</a></li>
+            <li><a href="blogs.html">blogs</a></li>
+            <li><a href="tenets.html">tenets</a></li>
+            <li><a href="digital-garden/index.html">digital garden 🌻</a></li>
+        </ul>
+    </nav>
     <main>
         <p>Hello 👋</p>
         <p>I am Alex and this is my personal website. You have made it here, so welcome to my little corner of the internet. I am using this space as place to organize and share some of my ideas and interests. It is a place I enjoy visiting and working on, and if you find it interesting too then that's great.</p>
@@ -133,14 +79,5 @@
         <p>Here is a collection of what I call my personal <a href="tenets.html" style="text-decoration: underline;">tenets</a>. </p>
         <p>And lastly, here is my <a href="digital-garden/index.html" style="text-decoration: underline;">digital garden 🌻</a>. A place where I collect ideas and let them grow.</p>
     </main>
-
-    <script>
-        // Toggle dropdown visibility
-        function toggleDropdown() {
-            var dropdown = document.getElementById('dropdownMenu');
-            dropdown.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
-
