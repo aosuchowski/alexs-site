@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the document type and language. -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling and rendering on different devices. -->
+    <title>Alex Osuchowski</title> <!-- The title that appears on the browser tab. -->
+    <style>
+        /* Basic styles for the entire document */
+        body {
+            margin: 0; /* Removes default margin around the body. */
+            font-family: 'Consolas', monospace; /* Sets the font to Consolas, with monospace as a fallback. */
+            background-color: #FFECA3; /* Sets a light pastel yellow background color for the page. */
+            color: #457291; /* Sets the text color. */
+            display: flex; /* Enables flexbox layout for the body. */
+            flex-direction: column; /* Arranges elements vertically. */
+            align-items: center; /* Centers child elements horizontally. */
+            justify-content: center; /* Centers child elements vertically. */
+            height: 100vh; /* Sets the height of the body to 100% of the viewport height. */
+            text-align: left; /* Centers text within the body element. */
+        }
+
+        header {
+            background-color: #FFECA3; /* Sets the same light pastel yellow background color for the header. */
+            padding: 1rem; /* Adds padding inside the header for spacing. */
+            width: 100%; /* Makes the header span the full width of the viewport. */
+            position: fixed; /* Fixes the header at the top of the page, even when scrolling. */
+            top: 0; /* Positions the header at the top of the viewport. */
+            display: flex; /* Enables flexbox layout for the header. */
+            justify-content: center; /* Centers the content horizontally within the header. */
+            /* box-shadow: 0 2px 5px #457291; */
+        }
+
+        h1 {
+            color: #457291; /* Sets the header text color to pastel blue. */
+            margin: 0; /* Removes default margin around the h1 element. */
+            font-size: 2rem; /* Sets the font size of the h1 element to 2 rem units. */
+            font-weight: normal; /* Ensures the header text is not bold. */
+        }
+
+        nav {
+            margin-top: 20rem; /* Adds a margin above the navigation to separate it from the header. */
+        }
+
+        nav ul {
+            list-style-type: none; /* Removes default bullet points from the list. */
+            padding: 0; /* Removes default padding from the list. */
+            margin: 0; /* Removes default margin from the list. */
+            display: flex; /* Enables flexbox layout for the list. */
+            flex-direction: column;
+            gap: 0.5rem; /* Adds a 1rem space between list items. */
+        }
+
+        nav ul li {
+            display: block; /* Ensures list items are displayed inline. */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Removes default underline from links. */
+            color: #A64C3E; /* Sets the link color to pastel blue. */
+            font-size: 1.1rem; /* Sets the font size of links slightly larger than normal text. */
+            font-weight: normal; /* Makes the link text bold. */
+        }
+
+        main {
+            margin-top: 2rem; /* Adds a top margin to push the main content down, creating space for the fixed header. */
+            padding: 2rem; /* Adds padding inside the main element for spacing. */
+            max-width: 600px; /* Limits the width of the main content to 600px for better readability. */
+            line-height: 1.6; /* Increases line height for better readability of the text. */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>alex osuchowski</h1> <!-- The main heading of the site, displaying the name 'alex osuchowski'. -->
+    </header>
+    <nav>
+        <ul>
+            <!-- Navigation links to different sections of the website. -->
+            <li><a href="about.html">about</a></li> <!-- Link to the 'About' section. -->
+            <li><a href="now.html">now</a></li> <!-- Link to the 'Now' section. -->
+            <li><a href="blogs.html">blogs</a></li> <!-- Link to the 'Blog' section. -->
+            <li><a href="tenets.html">tenets</a></li> <!-- Link to the 'Tenets' section. -->
+            <li><a href="digital-garden/index.html">digital garden 🌻</a></li> <!-- Link to the 'Digital Garden' section. -->
+        </ul>
+    </nav>
+    <main>
+        <!-- Main content of the page, introducing Alex and describing the purpose of the website. -->
+        <p>Hello 👋</p>
+        <p>I am Alex and this is my personal website. You have made it here, so welcome to my little corner of the internet. I am using this space as place to organize and share some of my ideas and interests. It is a place I enjoy visiting and working on, and if you find it interesting too then that's great.</p>
+        <p>My interests include being outside in nature, reading and writing, cooking, playing sports, traveling, computer programming, building LEGO sets, putting together jigsaw puzzles, watching Seinfeld, and above all I love learning and exploring new things.</p>
+        <p>If you're interested, you can read a few things <a href="about.html" style="text-decoration: underline;">about</a> me, and what I'm doing <a href="now.html" style="text-decoration: underline;">now</a>.</p>
+        <p>I love to write. And I especially love to write if it is helpful or interesting for others. I've started a couple <a href="blogs.html" style="text-decoration: underline;">blogs</a> which you are welcome to check out.</p>
+        <p>Here is a collection of what I call my personal <a href="tenets.html" style="text-decoration: underline;">tenets</a>. </p>
+        <p>And lastly, here is my <a href="digital-garden.html" style="text-decoration: underline;">digital garden 🌻</a>. A place where I collect ideas and let them grow.</p>
+    </main>
+</body>
+</html>
