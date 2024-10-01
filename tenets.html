@@ -13,19 +13,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-top: 2rem;
+            padding: 0 20px; /* Add 20px padding to the left and right */
             text-align: left;
-        }
-
-        header {
-            background-color: #FFECA3;
-            padding: 1rem;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            display: flex;
-            justify-content: center;
         }
 
         h1 {
@@ -36,7 +28,7 @@
         }
 
         nav {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         nav ul {
@@ -49,35 +41,40 @@
         }
 
         nav ul li {
-            display: inline;
+            display: block;
         }
 
         nav ul li a {
+            text-decoration: none;
             color: #A64C3E;
             font-size: 1.1rem;
             font-weight: normal;
         }
 
         main {
-            margin-top: 5rem;
-            padding: 2rem;
+            margin-top: 1rem;
+            /* padding: 0.5rem; */
             max-width: 600px;
             line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>alex osuchowski</h1>
-    </header>
+    <h1>alex osuchowski</h1>
     <nav>
         <ul>
             <li><a href="index.html">homepage</a></li>
         </ul>
     </nav>
     <main>
-        <p>Along with my blog writing, I take lots of miscellaneous notes on a daily basis – about things I see that are interesting, goals I have, foods I like, etc. One category of notes is what I call my "tenets". A tenet is a "principle or belief, expecially one of the main principles of a religion or philosophy". My list of tenets are sort of like my personal philosophy of life, things I feel to be true based on a combination of all my life experiences and learnings to date. This is a "living" list, I am continually revising, updating, and adding to it, as each new day, hour, minute, second, brings new experiences and knowledge.</p>
-        <p>I believe you can never know anything 100% for sure. My beliefs are held as certainty percentages which are constantly being updated based on new information, knowledge, and experiences. Nothing is black and white. Everything is a balance with subtleties, and that’s where the human element comes in I believe. Bayes theory applies: yesterday’s a posteriori is today’s a priori.</p>
+        <p>Along with my blog writing, I take lots of miscellaneous notes on a daily basis – about things I see that are interesting, goals I have, foods I like, etc.</p>
+        <p>One category of notes is what I call my "tenets". A tenet is a "principle or belief, especially one of the main principles of a religion or philosophy". My list of tenets are sort of like my personal philosophy of life, things I feel to be true based on a combination of all my life experiences and learnings to date.</p>
+        <p>This is a "living" list, I am continually revising, updating, and adding to it, as each new day, hour, minute, second, brings new experiences and knowledge.</p>
+        <p><i>I believe you can never know anything 100% for sure. My beliefs are held as certainty percentages which are constantly being updated based on new information, knowledge, and experiences. Nothing is black and white. Everything is a balance with subtleties, and that’s where the human element comes in I believe. Bayes theory applies: yesterday’s a posteriori is today’s a priori.</i></p>
+        <p><i>Train the mind to think beyond the immediate exchange. Think about the legacy impacts of words or actions.</i></p>
+        <p><i>Have to lean into change instead of leaping into change in order to have a better chance of sticking with it.</i></p>
     </main>
 </body>
 </html>
+
+

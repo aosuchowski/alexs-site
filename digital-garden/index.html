@@ -13,19 +13,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-top: 2rem;
+            padding: 0 20px; /* Add 20px padding to the left and right */
             text-align: left;
-        }
-
-        header {
-            background-color: #FFECA3;
-            padding: 1rem;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            display: flex;
-            justify-content: center;
         }
 
         h1 {
@@ -36,7 +28,7 @@
         }
 
         nav {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         nav ul {
@@ -49,31 +41,31 @@
         }
 
         nav ul li {
-            display: inline;
+            display: block;
         }
 
         nav ul li a {
+            text-decoration: none;
             color: #A64C3E;
             font-size: 1.1rem;
             font-weight: normal;
-            text-decoration: none;
+        }
+
+        main {
+            margin-top: 1rem;
+            /* padding: 0.5rem; */
+            max-width: 600px;
+            line-height: 1.6;
         }
 
         nav ul li a:hover {
             text-decoration: underline;
         }
 
-        main {
-            margin-top: 5rem;
-            padding: 2rem;
-            max-width: 600px;
-            line-height: 1.6;
-        }
-
         .box-link {
             font-size: 1.2em;
             background-color: #FFD700;
-            color: #457291;
+            color: #A64C3E;
             padding: 1rem;
             margin: 1rem 0;
             text-align: center;
@@ -90,13 +82,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>alex osuchowski</h1>
-    </header>
-
+    <h1>alex osuchowski</h1>
     <nav>
         <ul>
-            <li><a href="index.html">homepage</a></li>
+            <li><a href="../index.html">homepage</a></li>
         </ul>
     </nav>
 
@@ -105,8 +94,14 @@
         <p>Ultimately, I'd like to create something similar to what Tom Critchlow has made <a href="https://tomcritchlow.com/wiki/" style="text-decoration: underline;">here</a>.</p>
 
         <!-- Clickable links for Notes and Assets -->
-        <a href="art/index.html" class="box-link">art</a>
-        <a href="people/index.html" class="box-link">people</a>
+        <a href="art/art-note1.html" class="box-link">art</a>
+        <a href="people/people-note1.html" class="box-link">people</a>
+        <a href="poetry/poetry-note1.html" class="box-link">poetry</a>
+        <a href="house/house-note1.html" class="box-link">house</a>
+        <a href="food/food-note1.html" class="box-link">food</a>
+        <a href="quotes/quotes-note1.html" class="box-link">quotes</a>
+        <a href="music/music-note1.html" class="box-link">music</a>
+        <a href="books/books-note1.html" class="box-link">books</a>
     </main>
 </body>
 </html>
