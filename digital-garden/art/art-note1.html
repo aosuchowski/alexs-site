@@ -40,6 +40,15 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .regular-photo {
+            max-width: 100%; /* Makes sure the image doesn't exceed the container width */
+            height: auto; /* Maintains the aspect ratio */
+            /* Optional box shadow or other styling */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem; /* Adds spacing below the image */
+        }
+
     </style>
 </head>
 <body>
@@ -47,6 +56,8 @@
         <!-- <h1>Note 1</h1> -->
         <p>This is a collection of anything art-related.</p>
         <p>The color palette of this website is inspired by a painting I saw in the Louvre.</p>
+        <img src="../../images/recharge.png" alt="Description of Image" class="regular-photo">
+        <p>The introvert powers up.</p>
         <!-- <p>Related content: <a href="note2.html">Check out Note 2</a></p> -->
         <p><a href="../index.html">back to digital garden 🌻</a></p>
     </main>

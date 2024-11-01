@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about - alex's website</title>
+    <title>about - berts's website</title>
     <style>
          body {
             margin: 0;
@@ -57,10 +57,26 @@
             max-width: 600px;
             line-height: 1.6;
         }
+
+        .circular-photo {
+            width: 200px;            /* Set the width of the circular image */
+            height: 200px;           /* Set the height of the circular image */
+            border-radius: 50%;      /* Makes the image circular */
+            object-fit: cover;       /* Ensures the image fills the circle */
+            overflow: hidden;        /* Hides overflow to maintain circular shape */
+            /* border: 4px solid #fff;  Optional border for styling */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: center; /* Centers the image within this container */
+            margin-bottom: 1rem; /* Optional: Adds spacing between the image and the text */
+        }
     </style>
 </head>
 <body>
-    <h1>alex osuchowski</h1>
+    <h1>bert harbinson</h1>
     </header>
     <nav>
         <ul>
@@ -68,7 +84,10 @@
         </ul>
     </nav>
     <main>
-        <p>I am trained as a civil engineer, specifically a geotechnical engineer, and more specifically as an offshore geotechnical engineer. I recently completed my PhD at The University of Western Australia in Perth. Before that I lived in the United States where I was born and raised.</p>
+        <div class="photo-container">
+            <img src="images/portrait-michelangelo.jpg" alt="Circular Photo" class="circular-photo">
+        </div>
+        <p>I am trained as a civil engineer, specifically a geotechnical engineer, and more specifically as an offshore geotechnical engineer. I recently completed my postgraduate studies at The University of Western Australia in Perth. Before that I lived in the United States where I was born and raised.</p>
     </main>
 </body>
 </html>
